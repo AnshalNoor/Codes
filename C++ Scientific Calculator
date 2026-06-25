@@ -10,7 +10,7 @@ int main()
     /* ========================= CALCULATOR BASE ========================= */
     cout << "=========================" << endl;
     cout << "Anshal's Scientific Calculator" << endl;
-    cout << "=========================" << endl;\
+    cout << "=========================" << endl;
     cout << "[1]  Addition" << endl;
     cout << "[2]  Subtraction" << endl;
     cout << "[3]  Multiplication" << endl;
@@ -36,7 +36,7 @@ int main()
     {   //while loop start
 
         cout << "=========================" << endl;
-        cout << "Enter your choice: ";
+        cout << "Enter the choice to perform operation: ";
         cin >> opt;
 
         switch (opt)
@@ -58,7 +58,7 @@ int main()
 	        	cout << "==============" << endl;
                 cout << "Addition Selected!" << endl;
 				cout << "==============" << endl;
-                cout << "Enter numbers to add (type 0 to stop): " << endl;
+                cout << "Enter numbers to Add (Type 0 to stop): " << endl;
 
                 while (true)
                 {
@@ -81,7 +81,7 @@ int main()
 				cout << "==============" << endl;
                 cout << "Subtraction Selected!" << endl;
 				cout << "==============" << endl;
-                cout << "Enter numbers to subtract (type 0 to stop): " << endl;
+                cout << "Enter numbers to Subtract (Type 0 to stop): " << endl;
 
                 while (true)
                 {
@@ -112,7 +112,7 @@ int main()
 				cout << "==============" << endl;
                 cout << "Multiplication Selected!" << endl;
 				cout << "==============" << endl;
-                cout << "Enter numbers to multiply (type 0 to stop): " << endl;
+                cout << "Enter numbers to Multiply (Type 0 to stop): " << endl;
 
                 while (true)
                 {
@@ -135,7 +135,7 @@ int main()
 				cout << "==============" << endl;
                 cout << "Division Selected!" << endl;
 				cout << "==============" << endl;
-                cout << "Enter numbers to divide (type 0 to stop): " << endl;
+                cout << "Enter numbers to Divide (Type 0 to stop): " << endl;
 
                 while (true)
                 {
@@ -168,10 +168,10 @@ int main()
 				cout << "==============" << endl;
                 cout << "Power Selected!" << endl;
 				cout << "==============" << endl;
-                cout << "Enter base: ";
+                cout << "Enter Base: ";
                 cin >> base;
 
-                cout << "Enter exponent: ";
+                cout << "Enter Exponent: ";
                 cin >> exp;
 
                 for (int i = 0; i < exp; i++)
@@ -191,7 +191,7 @@ int main()
 				cout << "==============" << endl;
                 cout << "Square Root Selected!" << endl;
 				cout << "==============" << endl;
-                cout << "Enter number: ";
+                cout << "Enter Number: ";
                 cin >> a;
 
 				cout << "==============" << endl;
@@ -206,7 +206,7 @@ int main()
 				cout << "==============" << endl;
                 cout << "Cube Root Selected!" << endl;
 				cout << "==============" << endl;
-                cout << "Enter number: ";
+                cout << "Enter Number: ";
                 cin >> a;
 
 				cout << "==============" << endl;
@@ -221,7 +221,7 @@ int main()
 				cout << "==============" << endl;
                 cout << "Logarithm Selected!" << endl;
 				cout << "==============" << endl;
-                cout << "Enter number: ";
+                cout << "Enter Number: ";
                 cin >> a;
 
 				cout << "==============" << endl;
@@ -236,7 +236,7 @@ int main()
 				cout << "==============" << endl;
                 cout << "Antilogarithm Selected!" << endl;
 				cout << "==============" << endl;
-                cout << "Enter number: ";
+                cout << "Enter Number: ";
                 cin >> a;
 
 				cout << "==============" << endl;
@@ -251,7 +251,7 @@ int main()
 				cout << "==============" << endl;
                 cout << "COS Selected!" << endl;
 				cout << "==============" << endl;
-                cout << "Enter angle (radians): ";
+                cout << "Enter Angle (Radians): ";
                 cin >> a;
 
 				cout << "==============" << endl;
@@ -266,7 +266,7 @@ int main()
 				cout << "==============" << endl;
                 cout << "SIN Selected!" << endl;
 				cout << "==============" << endl;
-                cout << "Enter angle (radians): ";
+                cout << "Enter Angle (Radians): ";
                 cin >> a;
 
 				cout << "==============" << endl;
@@ -281,7 +281,7 @@ int main()
 				cout << "==============" << endl;
                 cout << "TAN Selected!" << endl;
 				cout << "==============" << endl;
-                cout << "Enter angle (radians): ";
+                cout << "Enter Angle (Radians): ";
                 cin >> a;
 
 				cout << "==============" << endl;
@@ -297,7 +297,7 @@ int main()
 				cout << "==============" << endl;
             	cout << "Factorial Selected!" << endl;
 				cout << "==============" << endl;
-	        	cout << "Enter a number: ";
+	        	cout << "Enter a Number: ";
             	cin >> num;
         		for (int i = 1; i <= num; i++)
   	        	{
@@ -317,13 +317,13 @@ int main()
 		 		cout << "==============" << endl;
                 cout << "Length Converter Selected!" << endl;
 		 		cout << "==============" << endl;
-  		 		cout << "1. cm to m" << endl;
-		 		cout << "2. m to cm" << endl;
-   		 		cout << "3. m to km" << endl;
-    		 	cout << "4. km to m" << endl;
-   				cout << "Enter choice: ";
+  		 		cout << "[1] cm to m" << endl;
+		 		cout << "[2] m to cm" << endl;
+   		 		cout << "[3] m to km" << endl;
+    		 	cout << "[4] km to m" << endl;
+   				cout << "Enter Choice: ";
    		 		cin >> choice;
-		 		cout << "Enter value: ";
+		 		cout << "Enter Value: ";
    			 	cin >> value;
 		 		cout << "==============" << endl;
 		
@@ -333,7 +333,7 @@ int main()
        			 case 2: cout << "Result = " << value * 100 << " cm" << endl; break;
      		  	 case 3: cout << "Result = " << value / 1000 << " km" << endl; break;
        			 case 4: cout << "Result = " << value * 1000 << " m" << endl; break;
-       			 default: cout << "Invalid choice!" << endl;
+       			 default: cout << "Invalid Choice!" << endl;
    		  		}
 		  		break;
 			}
@@ -346,15 +346,15 @@ int main()
 		 	 	cout << "==============" << endl;
                 cout << "Time Converter Selected!" << endl;
 		        cout << "==============" << endl;
-			 	cout << "1. Seconds to Minutes" << endl;
-  			 	cout << "2. Minutes to Seconds" << endl;
-   			 	cout << "3. Minutes to Hours" << endl;
-   			 	cout << "4. Hours to Minutes" << endl;
-   			 	cout << "5. Hours to Days" << endl;
-   			 	cout << "6. Days to Hours" << endl;
-   			 	cout << "Enter choice: ";
+			 	cout << "[1] Seconds to Minutes" << endl;
+  			 	cout << "[2] Minutes to Seconds" << endl;
+   			 	cout << "[3] Minutes to Hours" << endl;
+   			 	cout << "[4] Hours to Minutes" << endl;
+   			 	cout << "[5] Hours to Days" << endl;
+   			 	cout << "[6] Days to Hours" << endl;
+   			 	cout << "Enter Choice: ";
   			 	cin >> choice;
-			 	cout << "Enter value: ";
+			 	cout << "Enter Value: ";
    			 	cin >> value;
 			 	cout << "==============" << endl;
 
@@ -366,7 +366,7 @@ int main()
        				case 4: cout << "Result = " << value * 60 << " min" << endl; break;
         			case 5: cout << "Result = " << value / 24 << " days" << endl; break;
         			case 6: cout << "Result = " << value * 24 << " hr" << endl; break;
-        			default: cout << "Invalid choice!" << endl;
+        			default: cout << "Invalid Choice!" << endl;
     			}
 			 	break;
 		 	}
@@ -379,13 +379,13 @@ int main()
 		    	cout << "==============" << endl;
                 cout << "Temperature Converter Selected!" << endl;
 		    	cout << "==============" << endl;
-	            cout << "1. Celsius to Fahrenheit" << endl;
-   		    	cout << "2. Fahrenheit to Celsius" << endl;
-    		    cout << "3. Celsius to Kelvin" << endl;
-    		    cout << "4. Kelvin to Celsius" << endl;
-   		    	cout << "Enter choice: ";
+	            cout << "[1] Celsius to Fahrenheit" << endl;
+   		    	cout << "[2] Fahrenheit to Celsius" << endl;
+    		    cout << "[3] Celsius to Kelvin" << endl;
+    		    cout << "[4] Kelvin to Celsius" << endl;
+   		    	cout << "Enter Choice: ";
     		    cin >> choice;
-		    	cout << "Enter temperature: ";
+		    	cout << "Enter Temperature: ";
     		    cin >> temp;
  		    	cout << "==============" << endl;
 
@@ -395,7 +395,7 @@ int main()
        				case 2: cout << "Result = " << (temp - 32) * 5 / 9 << " C" << endl; break;
         			case 3: cout << "Result = " << temp + 273.15 << " K" << endl; break;
         			case 4: cout << "Result = " << temp - 273.15 << " C" << endl; break;
-        			default: cout << "Invalid choice!" << endl;
+        			default: cout << "Invalid Choice!" << endl;
     		    }
 		    	break;
 			}
@@ -408,9 +408,9 @@ int main()
 			 	cout << "==============" << endl;
                 cout << "Percentage Calculator Selected!" << endl;
 	            cout << "==============" << endl;
-			 	cout << "Enter percentage: ";
+			 	cout << "Enter Percentage: ";
     			cin >> percentage;
-		       	cout << "Enter number: ";
+		       	cout << "Enter Number: ";
    			 	cin >> number;
 	 		 	cout << "==============" << endl;
    			 	cout << "Result = " << (percentage / 100) * number << endl;
@@ -424,11 +424,11 @@ int main()
 		    	cout << "==============" << endl;
                 cout << "Area Calculator Selected!" << endl;
 		    	cout << "==============" << endl;
-		    	cout << "1. Square" << endl;
-  		    	cout << "2. Rectangle" << endl;
-  		    	cout << "3. Circle" << endl;
-    		    cout << "4. Triangle" << endl;
-    		    cout << "Enter choice: ";
+		    	cout << "[1] Square" << endl;
+  		    	cout << "[2] Rectangle" << endl;
+  		    	cout << "[3] Circle" << endl;
+    		    cout << "[4] Triangle" << endl;
+    		    cout << "Enter Choice: ";
    		    	cin >> choice;
 
    		    	switch (choice)
@@ -436,7 +436,7 @@ int main()
        		    	case 1:
      		    	{
           	   			double side;
-           	   			cout << "Enter side: ";
+           	   			cout << "Enter Side: ";
            	   			cin >> side;
 		   				cout << "==============" << endl;
            	   			cout << "Area = " << side * side << endl;
@@ -446,9 +446,9 @@ int main()
        		  		case 2:
       		  		{
        	         		double length, width;
-          	 			cout << "Enter length: ";
+          	 			cout << "Enter Length: ";
           	 			cin >> length;
-           	 			cout << "Enter width: ";
+           	 			cout << "Enter Width: ";
             	 		cin >> width;
 		 				cout << "==============" << endl;
             	 		cout << "Area = " << length * width << endl;
@@ -458,7 +458,7 @@ int main()
       				case 3:
         			{
             			double radius;
-            			cout << "Enter radius: ";
+            			cout << "Enter Radius: ";
             			cin >> radius;
 						cout << "==============" << endl;
             			cout << "Area = " << 3.14159265359 * radius * radius << endl;
@@ -468,9 +468,9 @@ int main()
         			case 4:
         			{
             			double base, height;
-           	 			cout << "Enter base: ";
+           	 			cout << "Enter Base: ";
             			cin >> base;
-            			cout << "Enter height: ";
+            			cout << "Enter Height: ";
             			cin >> height;
 						cout << "==============" << endl;
             			cout << "Area = " << 0.5 * base * height << endl;
@@ -479,7 +479,7 @@ int main()
 
         			default:
         			{
-            			cout << "Invalid choice!" << endl;
+            			cout << "Invalid Choice!" << endl;
         			}
     	    	}   
 	    		break;
@@ -492,11 +492,11 @@ int main()
 				cout << "==============" << endl;
                 cout << "Volume Calculator Selected!" << endl;
 				cout << "==============" << endl;
-				cout << "1. Cube" << endl;
-    			cout << "2. Cuboid" << endl;
-    			cout << "3. Cylinder" << endl;
-    			cout << "4. Sphere" << endl;
-    			cout << "Enter choice: ";
+				cout << "[1] Cube" << endl;
+    			cout << "[2] Cuboid" << endl;
+    			cout << "[3] Cylinder" << endl;
+    			cout << "[4] Sphere" << endl;
+    			cout << "Enter Choice: ";
     			cin >> choice;
 
     			switch (choice)
@@ -504,7 +504,7 @@ int main()
         			case 1:
         			{
             			double side;
-            			cout << "Enter side: ";
+            			cout << "Enter Side: ";
             			cin >> side;
 						cout << "==============" << endl;
            	 			cout << "Volume = " << side * side * side << endl;
@@ -514,11 +514,11 @@ int main()
         			case 2:
         			{
             			double length, width, height;
-            			cout << "Enter length: ";
+            			cout << "Enter Length: ";
             			cin >> length;
-            			cout << "Enter width: ";
+            			cout << "Enter Width: ";
             			cin >> width;
-            			cout << "Enter height: ";
+            			cout << "Enter Height: ";
             			cin >> height;
 						cout << "==============" << endl;
             			cout << "Volume = " << length * width * height << endl;
@@ -528,9 +528,9 @@ int main()
         			case 3:
        			 	{
            	 			double radius, height;
-            			cout << "Enter radius: ";
+            			cout << "Enter Radius: ";
             			cin >> radius;
-            			cout << "Enter height: ";
+            			cout << "Enter Height: ";
             			cin >> height;
 						cout << "==============" << endl;
             			cout << "Volume = " << 3.14159265359 * radius * radius * height << endl;
@@ -540,7 +540,7 @@ int main()
         			case 4:
         			{
             			double radius;
-            			cout << "Enter radius: ";
+            			cout << "Enter Radius: ";
             			cin >> radius;
 						cout << "==============" << endl;
             			cout << "Volume = " << (4.0 / 3.0) * 3.14159265359 * radius * radius * radius << endl;
@@ -549,7 +549,7 @@ int main()
 
         			default:
         			{
-            			cout << "Invalid choice!" << endl;
+            			cout << "Invalid Choice!" << endl;
         			}
    		 		}
 				break;
@@ -558,7 +558,7 @@ int main()
         	default:
         	{
 				cout << "==============" << endl;
-                cout << "Invalid option! Try again." << endl;
+                cout << "Invalid Option! Try again." << endl;
                 continue;
         	}
         }   //switch end
