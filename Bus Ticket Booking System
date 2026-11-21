@@ -1,0 +1,174 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main()
+{
+    string strtpos, endpos, mainbus, name;
+    int seat, age, price;
+    long long phone;
+
+//============================================================
+// SELECT THE BUS
+
+    cout << endl << "================";
+    cout << endl << "Select the Bus:";
+    cout << endl << "BusA";
+    cout << endl << "BusB";
+    cout << endl << "BusC";
+    cout << endl << "BusD";
+    cout << endl << "================";
+    cout << endl << "Your Choice: ";
+    getline(cin, mainbus);
+
+//============================================================
+// SELECT STARTING LOCATION
+    cout << endl << "================";
+    cout << endl << "Select Current Location:";
+    cout << endl << "1. Karachi";
+    cout << endl << "2. Hyderabad";
+    cout << endl << "3. Lahore";
+    cout << endl << "4. Peshawar";
+    cout << endl << "5. Quetta";
+    cout << endl << "================";
+    cout << endl << "Enter Your Current Location: ";
+    getline(cin, strtpos);
+
+//============================================================
+// SELECT DESTINATION
+    cout << endl << "================";
+    cout << endl << "Select Your Destination:";
+    cout << endl << "1. Karachi";
+    cout << endl << "2. Hyderabad";
+    cout << endl << "3. Lahore";
+    cout << endl << "4. Peshawar";
+    cout << endl << "5. Quetta";
+    cout << endl << "================";
+    cout << endl << "Enter Your Destination: ";
+    getline(cin, endpos);
+
+//============================================================
+// SET TICKET PRICE
+
+    if (strtpos == "Karachi" && endpos == "Hyderabad")
+        price = 1500;
+
+    else if (strtpos == "Karachi" && endpos == "Lahore")
+        price = 5000;
+
+    else if (strtpos == "Karachi" && endpos == "Peshawar")
+        price = 7000;
+
+    else if (strtpos == "Karachi" && endpos == "Quetta")
+        price = 4000;
+
+    else if (strtpos == "Hyderabad" && endpos == "Karachi")
+        price = 1500;
+
+    else if (strtpos == "Hyderabad" && endpos == "Lahore")
+        price = 4500;
+
+    else if (strtpos == "Hyderabad" && endpos == "Peshawar")
+        price = 6500;
+
+    else if (strtpos == "Hyderabad" && endpos == "Quetta")
+        price = 3500;
+
+    else if (strtpos == "Lahore" && endpos == "Karachi")
+        price = 5000;
+
+    else if (strtpos == "Lahore" && endpos == "Hyderabad")
+        price = 4500;
+
+    else if (strtpos == "Lahore" && endpos == "Peshawar")
+        price = 3000;
+
+    else if (strtpos == "Lahore" && endpos == "Quetta")
+        price = 6000;
+
+    else if (strtpos == "Peshawar" && endpos == "Karachi")
+        price = 7000;
+
+    else if (strtpos == "Peshawar" && endpos == "Hyderabad")
+        price = 6500;
+
+    else if (strtpos == "Peshawar" && endpos == "Lahore")
+        price = 3000;
+
+    else if (strtpos == "Peshawar" && endpos == "Quetta")
+        price = 7500;
+
+    else if (strtpos == "Quetta" && endpos == "Karachi")
+        price = 4000;
+
+    else if (strtpos == "Quetta" && endpos == "Hyderabad")
+        price = 3500;
+
+    else if (strtpos == "Quetta" && endpos == "Lahore")
+        price = 6000;
+
+    else if (strtpos == "Quetta" && endpos == "Peshawar")
+        price = 7500;
+
+    else
+    {
+        cout << endl << "Invalid Location or Destination!";
+        return 0;
+    }
+
+//============================================================
+// SELECT SEAT
+    cout << endl << "================";
+    cout << endl << "Available Seats: ";
+    cout << endl << "1. Seat 1";
+    cout << endl << "2. Seat 2";
+    cout << endl << "3. Seat 3";
+    cout << endl << "4. Seat 4";
+    cout << endl << "5. Seat 5";
+    cout << endl << "================";
+    cout << endl << "Select Your Seat: ";
+    cin >> seat;
+
+    while (seat < 1 || seat > 5)
+    {
+       cout << endl << "================";
+       cout << endl <<"Invalid Seat Number!";
+       cout << endl << "Please Select Again: ";
+       cin >> seat;
+    }
+
+//============================================================
+// PASSENGER DETAILS
+
+    cout << endl << "================";
+    cout << endl << "Enter Your Name: ";
+    cin.ignore();
+    getline(cin, name);
+
+    cout << "Enter Your Phone Number: ";
+    cin >> phone;
+
+    cout << "Enter Your Age: ";
+    cin >> age;
+
+//============================================================
+// PRINT TICKET
+
+    cout << endl << endl;
+    cout << "\t================================";
+    cout << endl << "\t          BUS TICKET";
+    cout << endl << "\t================================";
+    cout << endl << "\tPassenger Name: " << name;
+    cout << endl << "\tPhone Number: " << phone;
+    cout << endl << "\tAge: " << age;
+    cout << endl << "\tBus: " << mainbus;
+    cout << endl << "\tStarting Point: " << strtpos;
+    cout << endl << "\tDestination: " << endpos;
+    cout << endl << "\tSeat Number: " << seat;
+    cout << endl << "\tTicket Price: Rs. " << price;
+    cout << endl << "\t================================";
+    cout << endl << "\t   THANK YOU FOR TRAVELLING!";
+    cout << endl << "\t================================";
+
+    return 0;
+}
